@@ -1,0 +1,16 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - 2 Pac Dot Space</title>
+      {% else %}
+      <title>A random website</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Twopac Dot Space: <a href="/index">Home</a></div>
+        <div> <a href="/blog">Blog</a></div>
+        <div> <a href="/synth">Synthesizer project</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
